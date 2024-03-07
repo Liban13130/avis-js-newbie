@@ -1,14 +1,15 @@
-*{
+body{
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: Nunito, sans-serif;
+    background-color: rgb(59, 59, 59);
 }
 
 .container{
     position: relative;
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 420px;
     margin: 200px auto;
     border-radius: 20px;
     background: rgb(31 38 48);
@@ -39,39 +40,35 @@
     padding: 0 30px;
 }
 
-.container .notes{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.container .notes span{
+.container .notes button{
+    display: inline;
+    background-color: hsl(213, 19%, 18%);
     color: rgb(112 118 128);
-    background-color: rgb(38 47 56);
-    font-weight: 600;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    border: none;
+    padding: 13px;
+    cursor: pointer;
     transition: 0.3s ease;
+    font-weight: 600;
 }
 
-.container .notes span:hover{
+.container .notes button:hover{
+    background: rgb(125 135 152);
+    color: white;
+}
+
+.container .notes button:focus{
     color: rgb(255, 255, 255);
-    background-color: rgb(125 135 152);
-}
+    background-color: #fc7613;
+} 
 
-.container .notes span:active{
-    color: rgb(255, 255, 255);
-    background-color: rgb(252 118 19);
-}
 
-.container button{
+
+
+.container button.submit{
     position: absolute;
     width: 85%;
     border-radius: 20px;
@@ -88,7 +85,38 @@
     transition: 0.3s ease;
 }
 
-.container button:hover{
+.container button.submit:hover{
     background: rgb(255, 255, 255);
     color: rgb(252 118 19);
+}
+
+
+
+/* THANK YOU */
+.container-2{
+    height: 450px;
+    width: 425px;
+    margin: 0 auto;
+    background: rgb(31 38 48);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-2 .titre{
+    margin: 30px 0 15px 0;
+    color: #fc7613;
+    font-size: 14px;
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.container-2 .desc{
+    text-align: center;
+    padding: 0 30px;
+    color: #fff;
 }
